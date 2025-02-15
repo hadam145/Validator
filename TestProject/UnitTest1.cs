@@ -26,6 +26,12 @@ namespace TestProject
         }
 
         [TestMethod]
+        public void Test1()
+        {
+            Assert.AreNotEqual(true, validator.SpravneHeslo("x"));
+        }
+
+        [TestMethod]
         public void MaCislo()
         {
             Assert.AreEqual(false, validator.SpravneHeslo("hawdhhjawdh"));
