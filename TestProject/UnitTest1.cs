@@ -26,6 +26,12 @@ namespace TestProject
         }
 
         [TestMethod]
+        public void Test3()
+        {
+            Assert.AreNotEqual(true, validator.SpravneHeslo("kwadkwawkdalklwalk"));
+        }
+
+        [TestMethod]
         public void Test1()
         {
             Assert.AreNotEqual(true, validator.SpravneHeslo("x"));
